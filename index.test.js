@@ -3,7 +3,7 @@
 const fs = require('fs-extra')
 const path = require('path')
 const test = require('ava')
-const globby = require('globby')
+const globby = await import('globby');
 const lqip = require('.')
 
 const fixtures = globby.sync('fixtures/*.{jpg,jpeg,webp,png}')
